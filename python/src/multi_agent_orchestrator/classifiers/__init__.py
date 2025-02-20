@@ -21,6 +21,12 @@ try:
 except Exception as e:
     _OPENAI_AVAILABLE = False
 
+try:
+    from .deepseek_classifier import DeepSeekClassifier, DeepSeekClassifierOptions
+    _DEEPSEEK_AVAILABLE = True
+except Exception as e:
+    _DEEPSEEK_AVAILABLE = False
+
 __all__ = [
     "Classifier",
     "ClassifierResult",
@@ -42,4 +48,10 @@ if _OPENAI_AVAILABLE:
     __all__.extend([
         "OpenAIClassifier",
         "OpenAIClassifierOptions"
+    ])
+
+if _DEEPSEEK_AVAILABLE:
+    __all__.extend([
+        "DeepSeekClassifier",
+        "DeepSeekClassifierOptions"
     ])

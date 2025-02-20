@@ -10,6 +10,8 @@ BEDROCK_MODEL_ID_CLAUDE_3_5_SONNET = "anthropic.claude-3-5-sonnet-20240620-v1:0"
 BEDROCK_MODEL_ID_LLAMA_3_70B = "meta.llama3-70b-instruct-v1:0"
 OPENAI_MODEL_ID_GPT_O_MINI = "gpt-4o-mini"
 ANTHROPIC_MODEL_ID_CLAUDE_3_5_SONNET = "claude-3-5-sonnet-20240620"
+DEEPSEEK_MODEL_ID_DEEPSEEK_CHAT = "deepseek-chat"
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 
 class AgentProviderType(Enum):
     BEDROCK = "BEDROCK"

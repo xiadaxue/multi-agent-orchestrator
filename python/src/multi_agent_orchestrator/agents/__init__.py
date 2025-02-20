@@ -30,6 +30,12 @@ try:
 except ImportError:
     _OPENAI_AVAILABLE = False
 
+try:
+    from .deepseek_agent import DeepSeekAgent, DeepSeekAgentOptions
+    _DEEPSEEK_AVAILABLE = True
+except ImportError:
+    _DEEPSEEK_AVAILABLE = False
+
 from .supervisor_agent import SupervisorAgent, SupervisorAgentOptions
 
 
